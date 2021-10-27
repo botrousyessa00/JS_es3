@@ -1,0 +1,30 @@
+<html>
+    <head>
+     <title>Es3</title>
+    </head>
+    <body>
+        
+        <h1> Calcolatrice </h1>
+        
+        <input id ="num" type="number" name="numero">
+        <button id ="btn1">invia</button>
+        <table id="tab">
+        <tr><td><div id= "div1">ciao!</div></td></tr>
+        </table>
+
+        <script src = https://code.jquery.com/jquery-3.6.0.min.js ></script>
+        <script>
+        $("#btn1").click(function(){
+        var x = document.getElementById('num').value;
+          console.log(x);
+        var table = document.getElementById('tab');
+        var row = table.insertRow(0);
+        var tabella = row.insertCell(0);
+        tabella.innerHTML = x;
+        });
+
+        </script>
+
+
+    </body>
+</html>
